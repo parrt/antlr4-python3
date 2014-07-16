@@ -29,6 +29,7 @@
  */
 package org.antlr.v4.py3.test;
 
+import org.antlr.v4.py.test.BasePythonTest;
 import org.antlr.v4.tool.ErrorType;
 import org.junit.Test;
 
