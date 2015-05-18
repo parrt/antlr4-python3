@@ -56,7 +56,6 @@ import org.antlr.v4.runtime.atn.LexerATNSimulator;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.IntegerList;
 import org.antlr.v4.runtime.misc.Interval;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.semantics.SemanticPipeline;
 import org.antlr.v4.test.tool.ErrorQueue;
