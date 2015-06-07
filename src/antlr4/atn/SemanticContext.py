@@ -139,9 +139,9 @@ class Predicate(SemanticContext):
     def __hash__(self):
         with StringIO() as buf:
             buf.write(str(self.ruleIndex))
-            buf.write(u"/")
+            buf.write("/")
             buf.write(str(self.predIndex))
-            buf.write(u"/")
+            buf.write("/")
             buf.write(str(self.isCtxDependent))
             return hash(buf.getvalue())
 
@@ -188,7 +188,7 @@ class PrecedencePredicate(SemanticContext):
 
 # A semantic context which is true whenever none of the contained contexts
 # is false.
-#
+del AND
 class AND(SemanticContext):
 
     def __init__(self, a:SemanticContext, b:SemanticContext):
@@ -267,7 +267,7 @@ class AND(SemanticContext):
             first = True
             for o in self.opnds:
                 if not first:
-                    buf.write(u"&&")
+                    buf.write("&&")
                 buf.write(str(o))
                 first = False
             return buf.getvalue()
@@ -275,7 +275,7 @@ class AND(SemanticContext):
 #
 # A semantic context which is true whenever at least one of the contained
 # contexts is true.
-#
+del OR
 class OR (SemanticContext):
 
     def __init__(self, a:SemanticContext, b:SemanticContext):
@@ -352,7 +352,7 @@ class OR (SemanticContext):
             first = True
             for o in self.opnds:
                 if not first:
-                    buf.write(u"||")
+                    buf.write("||")
                 buf.write(str(o))
                 first = False
             return buf.getvalue()

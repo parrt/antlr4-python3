@@ -52,14 +52,14 @@ class Trees(object):
         if t.getChildCount()==0:
             return s
         with StringIO() as buf:
-            buf.write(u"(")
+            buf.write("(")
             buf.write(s)
             buf.write(' ')
             for i in range(0, t.getChildCount()):
                 if i > 0:
                     buf.write(' ')
                 buf.write(cls.toStringTree(t.getChild(i), ruleNames))
-            buf.write(u")")
+            buf.write(")")
             return buf.getvalue()
 
     @classmethod
@@ -94,7 +94,7 @@ class Trees(object):
         ancestors = []
         t = t.getParent()
         while t is not None:
-            ancestors.append(0, t) # insert at start
+            ancestors.insert(0, t) # insert at start
             t = t.getParent()
         return ancestors
 
