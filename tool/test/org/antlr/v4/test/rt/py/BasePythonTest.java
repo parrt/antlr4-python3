@@ -853,13 +853,8 @@ public abstract class BasePythonTest {
 			 String listenerName,
 			 String visitorName,
 			 String parserStartRuleName,
-<<<<<<< HEAD
-			 boolean debug);
-=======
 			 boolean debug,
 			 boolean setTrace);
->>>>>>> 3e76cfd7d510842f58e67d2ac15590ee77820746
-
 
 
 	protected abstract void writeLexerTestFile(String lexerName, boolean showDFA);
@@ -1032,37 +1027,21 @@ public abstract class BasePythonTest {
 			return null;
 		}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e76cfd7d510842f58e67d2ac15590ee77820746
 		@Override
 		public String getText() {
 			throw new UnsupportedOperationException("can't give strings");
 		}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e76cfd7d510842f58e67d2ac15590ee77820746
 		@Override
 		public String getText(Interval interval) {
 			throw new UnsupportedOperationException("can't give strings");
 		}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e76cfd7d510842f58e67d2ac15590ee77820746
 		@Override
 		public String getText(RuleContext ctx) {
 			throw new UnsupportedOperationException("can't give strings");
 		}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3e76cfd7d510842f58e67d2ac15590ee77820746
 		@Override
 		public String getText(Token start, Token stop) {
 			throw new UnsupportedOperationException("can't give strings");
